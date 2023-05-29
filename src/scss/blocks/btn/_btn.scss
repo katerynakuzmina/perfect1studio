@@ -1,0 +1,43 @@
+.btn {
+    background-color: #8DD83D;
+    width: 278px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+    &:hover {
+        color: $darkgrey;
+    }
+    &__promo {
+        width: 136px;
+        height: 38px;
+        &:nth-child(2) {
+            background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+            width: 148px;
+        }
+    }
+    &__consoles {
+        margin-top: 25px;
+    }
+    &__games {
+        background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+        width: 207px;
+        height: 53px;
+        display: block;
+        position: absolute;
+        bottom: 140px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__design {
+        width: 278px;
+        height: 60px;
+        &:nth-child(1) {
+            width: 207px;
+            background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+        }
+    }
+}

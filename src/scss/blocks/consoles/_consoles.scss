@@ -1,0 +1,28 @@
+.consoles {
+    min-height: 865px;
+    background: radial-gradient(100% 100% at 50% 0%, $grey 0%, $darkgrey 100%);
+    padding-top: 63px;
+    &__logo {
+        margin: 0 auto;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    
+    &__title {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    
+}

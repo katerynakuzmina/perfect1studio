@@ -1,0 +1,17 @@
+.games {
+    height: 880px;
+    background: url('../img/bg/second_bg.jpg') center center/cover no-repeat;
+    position: relative;
+    
+    &__wrapper {
+        padding: 97px 0 140px 0;
+        
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
