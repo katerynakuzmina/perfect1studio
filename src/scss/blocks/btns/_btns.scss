@@ -1,0 +1,17 @@
+.btn {
+    border: 2px solid #EE803E;
+    border-radius: 20px;
+    background-color: transparent;
+    width: 310px;
+    height: 66px;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 48px;
+    color: #FFDCC5;
+    &_promo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 212px;
+    }
+}
