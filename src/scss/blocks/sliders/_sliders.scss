@@ -1,0 +1,41 @@
+.sliders {
+    padding-top: 22px;
+    padding-left: 31px;
+    &__wrapper {
+        overflow: hidden;
+        width: 993px;
+        height: 542px;
+        background-color: $orange;
+    }
+    &__inner {
+        margin-left: 33px;
+        height: 100%;
+        display: grid;
+        grid-template: 1fr / repeat(7, 1fr);
+        column-gap: 52px;
+        align-items: center;
+    }
+    &__arrows {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        &_next {
+            position: absolute;
+            right: 45px;
+            bottom: 40px;
+        }
+        &_prev {
+            position: absolute;
+            left: 45px;
+            bottom: 40px;
+        }
+    }
+}
+
+.slide {
+    img {
+        width: 298px;
+        height: 348px;
+        border-radius: 15px;
+    }
+}

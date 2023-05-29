@@ -1,5 +1,5 @@
 .btn {
-    border: 2px solid #EE803E;
+    border: 2px solid $orange;
     border-radius: 20px;
     background-color: transparent;
     width: 310px;
@@ -8,6 +8,11 @@
     font-size: 35px;
     line-height: 48px;
     color: #FFDCC5;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: $orange
+    }
     &_promo {
         position: absolute;
         left: 50%;
