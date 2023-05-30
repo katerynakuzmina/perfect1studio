@@ -3,7 +3,7 @@
     padding-left: 31px;
     &__wrapper {
         overflow: hidden;
-        width: 993px;
+        min-width: 993px;
         height: 542px;
         background-color: $orange;
     }
@@ -19,6 +19,7 @@
         display: flex;
         justify-content: space-between;
         position: relative;
+        cursor: pointer;
         &_next {
             position: absolute;
             right: 45px;
