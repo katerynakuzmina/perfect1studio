@@ -2,5 +2,7 @@
     height: 800px;
     position: relative;
     background: url(../img/bg/main_bg.jpg) center center/cover no-repeat;
-    
+    &_study {
+        background: url(../img/bg/study_bg.jpg) center center/cover no-repeat;
+    }
 }
