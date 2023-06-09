@@ -26,20 +26,8 @@ h2 {
 }
 
 .container {
-  max-width: 1120px;
+  max-width: 1200px;
   margin: 0 auto;
-}
-
-.divider {
-  width: 330px;
-  height: 1px;
-  margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.title {
-  font-size: 36px;
-  font-weight: 400;
 }
 
 li {
@@ -131,10 +119,12 @@ li {
 .about {
   height: 672px;
   padding: 33px 19px 47px 30px;
-  display: grid;
-  grid-template: 1fr/minmax(555px, auto) minmax(395px, auto);
-  column-gap: 24px;
   background-color: #F2F2F2;
+}
+.about__wrapper {
+  display: grid;
+  grid-template: 1fr/2fr 1fr;
+  column-gap: 42px;
 }
 
 .text {
@@ -222,6 +212,7 @@ li {
   top: 168px;
   background-color: #ABA7A8;
   border-radius: 15px;
+  overflow: hidden;
 }
 .studio__adress_header {
   height: 57px;

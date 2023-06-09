@@ -1,8 +1,10 @@
 .about {
     height: 672px;
-    padding: 33px 19px 47px 30px;
-    display: grid;
-    grid-template: 1fr / minmax(555px, auto) minmax(395px, auto);
-    column-gap: 24px;
+    padding: 33px 19px 47px 30px;    
     background-color: #F2F2F2;
+    &__wrapper {
+        display: grid;
+        grid-template: 1fr / 2fr 1fr;
+        column-gap: 42px;
+    }
 }
