@@ -1,14 +1,24 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
   transition: 0.5s all;
 }
 
 a {
   text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 26px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-family: "Noto Sans", sans-serif;
 }
 
 .hidden {
@@ -48,11 +58,14 @@ li {
   background-color: transparent;
   width: 310px;
   height: 66px;
-  font-weight: 300;
+  cursor: pointer;
+}
+.btn a {
+  display: block;
   font-size: 35px;
   line-height: 48px;
+  text-align: center;
   color: #FFDCC5;
-  cursor: pointer;
 }
 .btn:hover {
   background-color: #EE803E;
@@ -62,6 +75,16 @@ li {
   left: 50%;
   transform: translateX(-50%);
   bottom: 212px;
+}
+.btn_footer {
+  width: 192px;
+  height: 51px;
+  margin-left: 146px;
+}
+.btn_footer a {
+  font-size: 20px;
+  display: block;
+  text-align: center;
 }
 
 .header {
@@ -81,10 +104,9 @@ li {
   column-gap: 52px;
   align-items: center;
   justify-items: start;
-  font-weight: 300;
-  font-size: 26px;
+  /* font-size: 26px;
   line-height: 35px;
-  color: #FFFFFF;
+  color: #FFFFFF; */
   cursor: pointer;
 }
 .header__menu-item_active:before {
@@ -112,13 +134,14 @@ li {
   display: grid;
   grid-template: 1fr/minmax(555px, auto) minmax(395px, auto);
   column-gap: 24px;
+  background-color: #F2F2F2;
 }
 
 .text {
   margin-top: 20px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 21px;
+  line-height: 32px;
   color: #000000;
 }
 
@@ -132,15 +155,15 @@ li {
 .subtitle {
   width: 424px;
   margin-top: 20px;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 30px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
   color: #000000;
 }
 
 .sliders {
-  padding-top: 22px;
-  padding-left: 31px;
+  padding: 22px 0 0 31px;
+  background-color: #F2F2F2;
 }
 .sliders__wrapper {
   overflow: hidden;
@@ -180,19 +203,25 @@ li {
 }
 
 .studio {
+  overflow: hidden;
   position: relative;
-  height: 658px;
-  background: url(../img/bg/second_bg.jpg) center center/90% no-repeat;
+  min-height: 722px;
+  background-color: #F2F2F2;
+  padding: 93px 28px 29px 28px;
+}
+.studio__wrapper {
+  min-height: 600px;
+  background: url(../img/bg/second_bg.jpg) center center/cover no-repeat;
+  margin: 0 auto;
 }
 .studio__adress {
   width: 345px;
   height: 330px;
   position: absolute;
   right: -18px;
-  top: 105px;
+  top: 168px;
   background-color: #ABA7A8;
   border-radius: 15px;
-  overflow: hidden;
 }
 .studio__adress_header {
   height: 57px;
@@ -203,4 +232,69 @@ li {
   color: #FFDCC5;
   padding-top: 12px;
   padding-left: 15px;
+}
+.studio__adress_item {
+  margin-top: 13px;
+  margin-left: 13px;
+}
+.studio__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFDCC5;
+  margin-top: 13px;
+}
+.studio__text a {
+  font-size: 17px;
+  color: inherit;
+}
+.studio__subtitle {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  margin-bottom: 13px;
+}
+
+.footer {
+  min-height: 448px;
+  background-color: #ABA7A8;
+  padding-top: 35px;
+  padding-left: 28px;
+  position: relative;
+}
+.footer__social {
+  display: flex;
+}
+.footer__social-item {
+  display: flex;
+}
+.footer__social-icon {
+  margin-right: 8px;
+}
+.footer__subtitle {
+  margin-right: 11px;
+}
+.footer__info {
+  margin-top: 52px;
+  width: 580px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__photo img {
+  border-radius: 100%;
+}
+.footer__descr {
+  margin-left: 25px;
+}
+.footer__logo {
+  position: absolute;
+  bottom: 18px;
+  left: 28px;
+}
+
+.promo_study {
+  height: 800px;
+  position: relative;
+  background: url(../img/bg/study_bg.jpg) center center/cover no-repeat;
 }

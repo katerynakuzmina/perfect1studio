@@ -3,12 +3,15 @@
     border-radius: 20px;
     background-color: transparent;
     width: 310px;
-    height: 66px;
-    font-weight: 300;
-    font-size: 35px;
-    line-height: 48px;
-    color: #FFDCC5;
+    height: 66px;    
     cursor: pointer;
+    a {
+        display: block;
+        font-size: 35px;
+        line-height: 48px;
+        text-align: center;
+        color: #FFDCC5;
+    }
     
     &:hover {
         background-color: $orange
@@ -18,5 +21,15 @@
         left: 50%;
         transform: translateX(-50%);
         bottom: 212px;
+    }
+    &_footer {
+        width: 192px;
+        height: 51px;
+        margin-left: 146px; 
+        a {
+            font-size: 20px; 
+            display: block;
+            text-align: center;
+        }      
     }
 }

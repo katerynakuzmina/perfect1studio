@@ -1,0 +1,39 @@
+.footer {
+    min-height: 448px;
+    background-color: $grey;
+    padding-top: 35px;
+    padding-left: 28px;
+    position: relative;
+    &__social {
+        display: flex;
+        &-item {
+            display: flex;
+        }
+        &-icon {
+            margin-right: 8px;
+        }
+    }
+    &__subtitle {
+        margin-right: 11px;
+    }
+    &__info {
+        margin-top: 52px;
+        width: 580px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__photo {
+        img {
+            border-radius: 100%;
+        }
+    }
+    &__descr {
+        margin-left: 25px;
+    }
+    &__logo {
+        position: absolute;
+        bottom: 18px;
+        left: 28px;
+
+    }
+}

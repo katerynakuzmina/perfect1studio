@@ -33,17 +33,5 @@ window.addEventListener('DOMContentLoaded', () => {
         prev.style.display = 'none';
       }
     });
-
-    /* prev.style.display = 'none';
-
-    next.addEventListener('click', () => {
-        if (offset == +width.slice(0, width.length - 2) * (slides.length - 1)) {
-            offset = 0;
-            prev.style.display = 'none';
-        } else {
-            offset += +width.slice(0, width.length - 2);
-            prev.style.display = 'block';
-        }
-        slidesField.style.transform = `translateX(-${offset}px)`;
-    }) */
+    
 });

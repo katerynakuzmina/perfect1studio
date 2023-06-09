@@ -2,49 +2,54 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfect1.Studio</title>
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
 
-    <section class="promo">
+    <section id="main_screen" class="promo">
         <div class="header">
             <div class="header__wrapper">
                  <div class="header__logo">
-                     <a href="#">
+                     <a href="#main_screen">
                          <img src="icons/logo.svg" alt="logo">
                      </a>
                  </div>
      
                 <ul class="header__menu">
                     <li class="header__menu-item header__menu-item_active">
-                        O nas
+                        <a href="#about">O nas</a>
                     </li>
                     
                     <li class="header__menu-item">
-                        Usługi
+                        <a href="#">Usługi</a>
                     </li>
 
                     <li class="header__menu-item">
-                        Szkoła
+                        <a href="/study.html">Szkoła</a>
                     </li>
 
                     <li class="header__menu-item">
-                        Kontakt
+                        <a href="#">Kontakt</a>
                     </li>
                 </ul>
             </div>
         </div>
-            
-        <button class="btn btn_promo">Zapisz się online</button>
+        
+        <button class="btn btn_promo">
+            <a href="https://booksy.com/pl-pl/191799_perfect-1-studio_paznokcie_4404_pruszkow?do=invite&_branch_match_id=1150782901434341601&utm_medium=merchant_customer_invite&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVT8nNcKoyiEo2r0oCAAPsaNwiAAAA">Zapisz się online</a>
+        </button>
+        
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="about__info">
-            <div class="title title_about">
+            <h2 class="title title_about">
                 O nas! 
-            </div>
+            </h2>
             
             <div class="subtitle subtitle_about">
                 Witamy w studio i szkole manicure Perfect1.studio ! 
@@ -73,16 +78,16 @@
                     <img src="img/sliders/slider_nail_3.jpg" alt="nails">
                 </div>
                 <div class="slide">
-                    <img src="img/sliders/slider_nail_4.jpg" alt="nails">
+                    <img src="img/sliders/slider_nail_4.JPG" alt="nails">
                 </div>
                 <div class="slide">
                     <img src="img/sliders/slider_nail_5.jpg" alt="nails">
                 </div>
                 <div class="slide">
-                    <img src="img/sliders/slider_nail_6.jpg" alt="nails">
+                    <img src="img/sliders/slider_nail_6.JPG" alt="nails">
                 </div>
                 <div class="slide">
-                    <img src="img/sliders/slider_nail_7.jpg" alt="nails">
+                    <img src="img/sliders/slider_nail_7.JPG" alt="nails">
                 </div>
             </div>
             <div class="sliders__arrows">
@@ -97,29 +102,58 @@
     </section>
 
     <section class="studio">
-        <div class="studio__adress">
-            <div class="studio__adress_header">Pruszków</div>
-            <div class="studio__adress_information">
-                <div class="studio__adress_item">
-                    <div class="studio__subtitle">My jesteśmy</div>
-                    <div class="studio__text">Ul.Anielin 1, lok. 102 Pruszków</div>
-                </div>
-                <div class="studio__adress_item">
-                    <div class="studio__subtitle">E-mail</div>
-                    <div class="studio__text">+48 787 01 01 71</div>
-                    <div class="studio__email">
-                        <a href="mailto:perfect.1studiopruszkow@gmail.com">Perfect.1studiopruszkow@gmail.com</a>
+        <div class="studio__wrapper">
+            <div class="studio__adress">
+                <div class="studio__adress_header">Pruszków</div>
+                <div class="studio__adress_information">
+                    <div class="studio__adress_item">
+                        <div class="studio__subtitle">My jesteśmy</div>
+                        <div class="studio__text">Ul.Anielin 1, lok. 102 Pruszków</div>
                     </div>
-                </div>
-                <div class="studio__adress_item">
-                    <div class="studio__subtitle">Godziny otwarcia</div>
-                    <div class="studio__text">Pn-Pt  9:00-20:00</div>
-                    <div class="studio__text">Sobota 10:00-18:00</div>
+                    <div class="studio__adress_item">
+                        <div class="studio__subtitle">E-mail</div>
+                        <div class="studio__text">+48 787 01 01 71</div>
+                        <div class="studio__text">
+                            <a href="mailto:perfect.1studiopruszkow@gmail.com">Perfect.1studiopruszkow@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="studio__adress_item">
+                        <div class="studio__subtitle">Godziny otwarcia</div>
+                        <div class="studio__text">Pn-Pt  9:00-20:00</div>
+                        <div class="studio__text">Sobota 10:00-18:00</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__social">
+                <h3 class="footer__subtitle">Poznamy się trochę bliżej?</h3>
+                <div class="footer__social-item">
+                    <div class="footer__social-icon"><img src="icons/social/Instagram.svg" alt="instsgram"></div>
+                    <div class="footer__social-icon"><img src="icons/social/Facebook.svg" alt="facebook"></div>
+                    <div class="footer__social-icon"><img src="icons/social/TikTok.svg" alt="tiktok"></div>
+                </div>
+            </div>
+            <div class="footer__info">
+                <div class="footer__photo">
+                    <img src="img/other/footer_photo.jpg" alt="photo">
+                </div>
+                <div class="footer__descr">Specjalizujemy się w wysokiej jakości manicure i pedicure, korzystając z hipoalergicznych materiałów i stale podnosząc kwalifikacje naszych pracowników. </div>
+            </div>
+            <button class="btn btn_footer">
+                <a href="https://booksy.com/pl-pl/191799_perfect-1-studio_paznokcie_4404_pruszkow?do=invite&_branch_match_id=1150782901434341601&utm_medium=merchant_customer_invite&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVT8nNcKoyiEo2r0oCAAPsaNwiAAAA">Zapisz się online</a>
+            </button>
+        </div>
+        <div class="footer__logo">
+            <a href="#main_screen">
+                <img src="icons/logo_black.svg" alt="logo">
+            </a>
+        </div>
+    </footer>
+    
     <script src="js/script.js"></script>
 </body>
 </html>

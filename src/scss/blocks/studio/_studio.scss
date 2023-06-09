@@ -1,16 +1,22 @@
 .studio {
+    overflow: hidden;
     position: relative;
-    height: 658px;
-    background: url(../img/bg/second_bg.jpg) center center/90% no-repeat;
+    min-height: 722px;
+    background-color: #F2F2F2;
+    padding: 93px 28px 29px 28px;
+    &__wrapper {
+        min-height: 600px;
+        background: url(../img/bg/second_bg.jpg) center center/cover no-repeat;
+        margin: 0 auto;
+    }
     &__adress {
         width: 345px;
         height: 330px;
         position: absolute;
         right: -18px;
-        top: 105px;
+        top: 168px;
         background-color: $grey;
         border-radius: 15px;
-        overflow: hidden;
         &_header {
             height: 57px;
             background-color: $orange;
@@ -21,6 +27,29 @@
             padding-top: 12px;
             padding-left: 15px;
         }
-        
+        &_item {
+            margin-top: 13px;margin-left: 13px;
+        }
     }
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFDCC5;
+        margin-top: 13px;
+        a {
+            font-size: 17px;
+            color: inherit;
+        }
+    }
+    &__subtitle {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: $black;
+        margin-bottom: 13px;
+    }
+    
+        
+    
 }
