@@ -13,9 +13,6 @@
             margin-right: 8px;
         }
     }
-    &__subtitle {
-        margin-right: 11px;
-    }
     &__info {
         margin-top: 52px;
         width: 580px;
@@ -29,6 +26,8 @@
     }
     &__descr {
         margin-left: 25px;
+        width: 462px;
+        font-size: 18px;
     }
     &__logo {
         position: absolute;

@@ -7,4 +7,17 @@
         grid-template: 1fr / 2fr 1fr;
         column-gap: 42px;
     }
+    &__descr {
+        margin-top: 20px;
+        &-study {
+            margin: 20px 50px;
+        }
+    }
+    &_study {
+        padding-top: 111px;
+        padding-bottom: 54px;
+    }
+    &__courses {
+        margin-top: 63px;
+    }
 }

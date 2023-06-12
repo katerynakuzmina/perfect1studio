@@ -1,6 +1,5 @@
 .sliders {
     padding: 22px 0 0 31px;
-    background-color: #F2F2F2;
     &__wrapper {
         overflow: hidden;
         min-width: 993px;
@@ -38,5 +37,6 @@
         width: 298px;
         height: 348px;
         border-radius: 15px;
+        object-fit:cover;
     }
 }

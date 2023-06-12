@@ -14,34 +14,34 @@
         column-gap: 52px;
         align-items: center;
         justify-items: start;
-        /* font-size: 26px;
-        line-height: 35px;
-        color: #FFFFFF; */
         cursor: pointer;
         &-item {
-            &_active {
-                &:before {
-                    content: '';
-                    position: absolute;
-                    bottom: 45px;
-                    width: 40px;
-                    height: 1px;
-                    background-color: $orange;
-                    transition: 0.4s all;
-                }
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                width: 90%;
+                height: 1px;
+                background-color: $orange;
+                transition: 0.4s all;
+                opacity: 0;
             }
-            
             &:hover {
                 &:before {
-                    content: '';
-                    position: absolute;
-                    bottom: 45px;
-                    width: 65px;
-                    height: 1px;
-                    background-color: $orange;
-                    transition: 0.4s all;
+                    opacity: 1;
+                    width: 90%;
+                }
+            }
+            &_active {
+                &:before {
+                    opacity: 1;
+                    width: 40px;
                 }
             }
         }
+        
+        
+        
     }
 }

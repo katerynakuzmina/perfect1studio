@@ -7,6 +7,14 @@
   font-family: "Montserrat", sans-serif;
   text-align: justify;
   transition: 0.5s all;
+  scroll-behavior: smooth;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 32px;
+}
+
+section {
+  background-color: #F2F2F2;
 }
 
 a {
@@ -19,6 +27,13 @@ a {
 
 h2 {
   font-family: "Noto Sans", sans-serif;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
 }
 
 .hidden {
@@ -71,6 +86,7 @@ li {
   width: 192px;
   height: 51px;
   margin-left: 146px;
+  margin-top: 27px;
 }
 .btn_footer a {
   font-size: 20px;
@@ -95,28 +111,28 @@ li {
   column-gap: 52px;
   align-items: center;
   justify-items: start;
-  /* font-size: 26px;
-  line-height: 35px;
-  color: #FFFFFF; */
   cursor: pointer;
 }
-.header__menu-item_active:before {
+.header__menu-item {
+  position: relative;
+}
+.header__menu-item:before {
   content: "";
   position: absolute;
-  bottom: 45px;
-  width: 40px;
+  bottom: -5px;
+  width: 90%;
   height: 1px;
   background-color: #EE803E;
   transition: 0.4s all;
+  opacity: 0;
 }
 .header__menu-item:hover:before {
-  content: "";
-  position: absolute;
-  bottom: 45px;
-  width: 65px;
-  height: 1px;
-  background-color: #EE803E;
-  transition: 0.4s all;
+  opacity: 1;
+  width: 90%;
+}
+.header__menu-item_active:before {
+  opacity: 1;
+  width: 40px;
 }
 
 .about {
@@ -129,13 +145,18 @@ li {
   grid-template: 1fr/2fr 1fr;
   column-gap: 42px;
 }
-
-.text {
+.about__descr {
   margin-top: 20px;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 32px;
-  color: #000000;
+}
+.about__descr-study {
+  margin: 20px 50px;
+}
+.about_study {
+  padding-top: 111px;
+  padding-bottom: 54px;
+}
+.about__courses {
+  margin-top: 63px;
 }
 
 .title {
@@ -146,17 +167,21 @@ li {
 }
 
 .subtitle {
-  width: 424px;
-  margin-top: 20px;
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
   color: #000000;
 }
+.subtitle-about {
+  width: 424px;
+  margin-top: 20px;
+}
+.subtitle-footer {
+  margin-right: 11px;
+}
 
 .sliders {
   padding: 22px 0 0 31px;
-  background-color: #F2F2F2;
 }
 .sliders__wrapper {
   overflow: hidden;
@@ -193,6 +218,7 @@ li {
   width: 298px;
   height: 348px;
   border-radius: 15px;
+  object-fit: cover;
 }
 
 .studio {
@@ -266,9 +292,6 @@ li {
 .footer__social-icon {
   margin-right: 8px;
 }
-.footer__subtitle {
-  margin-right: 11px;
-}
 .footer__info {
   margin-top: 52px;
   width: 580px;
@@ -280,6 +303,8 @@ li {
 }
 .footer__descr {
   margin-left: 25px;
+  width: 462px;
+  font-size: 18px;
 }
 .footer__logo {
   position: absolute;
